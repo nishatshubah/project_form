@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/authstyle.css">
+    <style>
+        p{
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head> 
+
+<body>
+
+
+    
+    <div class="container"><!-- container start -->
+        <div class="frame" id="frame2"><!-- frame start -->
+            <form action="" method="post"><!-- form start -->
+
+                <div class="form-group">
+                    <label for="name" class="form-label">name</label>
+                    <input type="text" class="form-control" name="name" id="username" placeholder="name" required>
+                  </div>
+
+                <div class="form-group">
+                    <label for="description" class="form-label">description</label>
+                    <textarea name="message" id="" cols="30" rows="3"></textarea>
+                  </div>
+
+                  <div>
+                    <input type="file" class="form-control" name="file-img" id="" required>
+                  </div>
+
+                  <div class="form-group" id="Checkbox">
+                    <input type="checkbox" class="form-check-input" name="agree" value="yes" id="exampleCheck1" required>
+                    <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
+                        statements in <a href="#" class="term-service">Terms of service</a></label>
+                  </div>
+
+                  <div class="d-grid gap-2 col-5 mx-auto">
+                    <button type="submit" name="register" class="btn btn-primary">Register</button>
+                  </div>
+
+            </form><!-- form end -->
+
+            <p class="loginhere">Have already an account ? <br> 
+                <a href="login.php" class="loginhere-link">Login here</a>
+            </p>
+        </div> <!-- frame end -->
+    </div><!-- container end -->
+</body>
+
+</html>
